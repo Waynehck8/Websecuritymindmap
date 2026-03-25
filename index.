@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayne's Web Security Mindmap</title>
+    <style>
+        /* Reset CSS */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: #0d1117; /* Màu nền Github Dark */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Container cho Mindmap */
+        .mindmap-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Hiệu ứng loading nhẹ */
+        .loading-text {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #58a6ff;
+            z-index: -1;
+        }
+
+        /* Thanh tiêu đề nhỏ phía trên */
+        .header-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 40px;
+            background: rgba(22, 27, 34, 0.8);
+            backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 1px solid #30363d;
+            z-index: 10;
+            color: #c9d1d9;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-bar">
+        🛡️ <b>Web Security Mindmap</b> — Chapter 1 to 11 Summary
+    </div>
+
+    <div class="loading-text">Đang tải bản đồ tư duy...</div>
+
+    <iframe class="mindmap-container" 
+            src="https://app.xmind.com/embed/JdIHLpFT" 
+            allowfullscreen="true" 
+            allow="allow-scripts allow-same-origin">
+    </iframe>
+
+</body>
+</html>
